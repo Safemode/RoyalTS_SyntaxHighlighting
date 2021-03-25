@@ -1,0 +1,42 @@
+\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b
+#55FFFF
+
+
+(?i)fail(\w+)|fail
+#FF5555
+
+
+(?i)notconnect
+#F00000
+
+
+(¨( *)?no | down |[^A-Za-z0-9](disabl(\w*)|fault|shutdown|disconnected|err(\w*)|ERR(\w*)|fail(\w*)|denied|not permitted|disallowed|not allowed|refused|problem|not permitted|notconnect)[^A-Za-z0-9])
+#F00000
+
+
+(?i)down|Unknown
+#F00000
+
+
+(?i)(\bfa|\bfastethernet|\bethernet|\beth|\be|\bgigabit|\bgigabitethernet|\bgig|\bgi|\btengigabitethernet|\bten|\bte|\bserial|\btu)([\s]?)([0-9]+)([\/]?)([0-9]*\b)([\/]?)\d{1,2}
+#FFFF00
+
+
+((policy-map|class|global|logging( event)?|(allocate-)|failover|static|security-level|service(-policy)?|spanning-tree|switchport|interface))
+#BE47B9
+
+
+(?i)vlan|duplex|speed|encapsulation
+#548DD4
+
+
+(?i)([0-9a-f]{4}[\.-][0-9a-f]{4}[\.-][0-9a-f]{4}|[0-9a-f]{1,2}[:-][0-9a-f]{1,2}[:-][0-9a-f]{1,2}[:-][0-9a-f]{1,2}[:-][0-9a-f]{1,2}[:-][0-9a-f]{1,2})
+#9BBB59
+
+
+\bdescription\s+(.*)$
+#00B050
+
+
+([^A-Za-z0-9](enabled|connected|up|yes|ok)[^A-Za-z0-9]|¨( *)?(description|(host)?name(if)?|version) [^¨]+)
+#00B050
